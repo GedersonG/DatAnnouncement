@@ -1,11 +1,9 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+Product1:
+  title: Monitor Gaming
+  description: 20 Pulgadas
+  price: 40000
 
-one:
-  title: MyString
-  description: MyText
-  price: 1
-
-two:
-  title: MyString
-  description: MyText
-  price: 1
+Product2:
+  title: Silla Gaming
+  description: 100% Cuero
+  price: 400000
