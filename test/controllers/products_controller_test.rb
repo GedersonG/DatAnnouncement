@@ -16,4 +16,23 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         assert_select '.description', '20 Pulgadas'
         assert_select '.price', '40000$'
     end
+
+    test 'render a new product form' do
+        get new_product_path
+
+        assert_response :success
+        assert_select 'form'
+    end
+
+    test 'allow to create a new product' do
+        post products_path, params: {
+            product: {
+                title: 'Mouse gaming',
+                description: '5200 DPI',
+                price: 30000
+            }
+        }
+
+        assert_redirected_to products_path
+    end
 end
