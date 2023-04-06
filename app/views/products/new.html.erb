@@ -1,6 +1,11 @@
 <h2>Añadir producto</h2>
 
 <%= form_with model: @product do |form| %>
+    <% @product.errors.full_messages.each do |err| %>
+        <div>
+            <%= err %>
+        </div>
+    <% end %>
     <div class="mt-4">
         <%= form.label :titulo %>
         <%= form.text_field :title%>
