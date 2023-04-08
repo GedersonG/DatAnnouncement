@@ -31,7 +31,14 @@ class ProductsController < ApplicationController
         if @product.update(product_params)
             redirect_to products_path, notice: 'Product updated'
         else
-            render :edit, status: unprocessable_entity
+            render :new, status: :unprocessable_entity
+        end
+    end
+
+    def destroy
+        @product = Product.find(params[:id])
+        @product.destroy
+        redirect_to products_path, notice: 'Product removed'
     end
 
     private
