@@ -1,10 +1,10 @@
 class ProductsController < ApplicationController
     def index
-        @products = Product.all
+        @products = Product.all.with_attached_photo
     end
 
-    def show_product
-        @product = Product.find(params[:id])
+    def show
+        find_product
     end
     
     def new
@@ -21,14 +21,12 @@ class ProductsController < ApplicationController
         end
     end
 
-    def edit_product
-        @product = Product.find(params[:id])
+    def edit
+        find_product
     end
 
     def update
-        @product = Product.find(params[:id])
-
-        if @product.update(product_params)
+        if find_product.update(product_params)
             redirect_to products_path, notice: 'Product updated'
         else
             render :new, status: :unprocessable_entity
@@ -36,9 +34,12 @@ class ProductsController < ApplicationController
     end
 
     def destroy
-        @product = Product.find(params[:id])
-        @product.destroy
+        find_product.destroy
         redirect_to products_path, notice: 'Product removed'
+    end
+
+    def find_product
+        @product = Product.find(params[:id])
     end
 
     private
