@@ -30,4 +30,28 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    models:
+      product: Product
+    attributes:
+      product: 
+        title: 'Title'
+        description: 'Description'
+        price: 'Price'
+        photo: 'Photo'
+  common:
+    confirm: '¿Are you sure?'
   hello: "Hello world"
+  products:
+    edit:
+      title: 'Edit product'
+    new:
+      title: 'New product'
+    index:
+      title: 'Products'
+    create:
+      created: 'Product created'
+    update:
+      updated: 'Product updated'
+    destroy:
+      destroyed: 'Product removed'

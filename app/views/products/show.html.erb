@@ -9,5 +9,5 @@
 <%= link_to 'Editar producto', edit_product_path(@product) %>
 <%= link_to 'Eliminar producto', product_path(@product), data: {
     turbo_method: 'delete',
-    turbo_confirm: '¿Are you sure?'
+    turbo_confirm: t('common.confirm')
 } %>

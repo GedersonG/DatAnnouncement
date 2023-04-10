@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
         @product = Product.new(product_params)
 
         if @product.save
-            redirect_to products_path, notice: 'Product created'
+            redirect_to products_path, notice: t('.created')
         else
             render :new, status: :unprocessable_entity
         end
@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
 
     def update
         if find_product.update(product_params)
-            redirect_to products_path, notice: 'Product updated'
+            redirect_to products_path, notice: t('.updated')
         else
             render :new, status: :unprocessable_entity
         end
@@ -35,7 +35,7 @@ class ProductsController < ApplicationController
 
     def destroy
         find_product.destroy
-        redirect_to products_path, notice: 'Product removed'
+        redirect_to products_path, notice: t('.destroyed')
     end
 
     def find_product
