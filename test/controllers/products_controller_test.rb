@@ -34,7 +34,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         }
 
         assert_redirected_to products_path
-        assert_equal flash[:notice], 'Product created'
+        assert_equal flash[:notice], 'Product was successfully created.'
     end
 
     test 'does not to create a new product with empty fields' do
@@ -66,7 +66,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         }
 
         assert_redirected_to products_path
-        assert_equal flash[:notice], 'Product updated'
+        assert_equal flash[:notice], 'Product was successfully updated.'
     end
 
     test 'does not allow to update a product with an invalid field' do
@@ -87,6 +87,6 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         end
 
         assert_redirected_to products_path
-        assert_equal flash[:notice], 'Product removed'
+        assert_equal flash[:notice], 'Product was successfully removed.'
     end
 end

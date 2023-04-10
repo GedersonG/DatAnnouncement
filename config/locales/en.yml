@@ -50,8 +50,24 @@ en:
     index:
       title: 'Products'
     create:
-      created: 'Product created'
+      created: 'Product was successfully created.'
     update:
-      updated: 'Product updated'
+      updated: 'Product was successfully updated.'
     destroy:
-      destroyed: 'Product removed'
+      destroyed: 'Product was successfully removed.'
+  categories:
+    edit:
+      title: 'Editing category'
+      back: 'Back to categories'
+    index:
+      title: 'Categories'
+      new: "New category"
+    new:
+      title: 'New category'
+      back: "Back to categories"
+    create:
+      created: 'Category was successfully created.'
+    update:
+      updated: "Category was successfully updated."
+    destroy:
+      destroyed: "Category was successfully destroyed."

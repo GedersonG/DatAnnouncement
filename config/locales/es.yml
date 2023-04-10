@@ -32,3 +32,19 @@ es:
       updated: 'Producto actualizado'
     destroy:
       destroyed: 'Producto eliminado'
+  categories:
+    edit:
+      title: 'Editando categoría'
+      back: 'Regresar a categorias'
+    index:
+      title: 'Categorias'
+      new: "Nueva categoria"
+    new:
+      title: 'Nueva categoria'
+      back: 'Regresar a categorias'
+    create:
+      created: 'La categoria fué creada satisfactoriamente.'
+    update:
+      updated: 'La categoria fué actualizada satisfactoriamente.'
+    destroy:
+      destroyed: 'La categoria fué eliminada satisfactoriamente.'
