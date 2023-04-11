@@ -29,7 +29,8 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
             product: {
                 title: 'Mouse gaming',
                 description: '5200 DPI',
-                price: 30000
+                price: 30000,
+                category_id: categories(:perifericos).id
             }
         }
 

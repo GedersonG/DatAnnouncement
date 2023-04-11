@@ -2,8 +2,10 @@ Product1:
   title: Monitor Gaming
   description: 20 Pulgadas
   price: 40000
+  category: perifericos
 
 Product2:
   title: Silla Gaming
   description: 100% Cuero
   price: 400000
+  category: accesorios
