@@ -26,6 +26,9 @@ es:
       title: 'Nuevo producto'
     index:
       title: 'Productos:'
+      all: 'Mostrar todos'
+      min_price: 'Precio minimo'
+      max_price: 'Precio maximo'
     create:
       created: 'Producto creado'
     update:

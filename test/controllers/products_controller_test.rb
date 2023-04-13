@@ -82,6 +82,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         assert_response :unprocessable_entity
     end
 
+    test 'render a list of products filtered by min_price and max_price' do
+        get products_path(min_price: 30000, max_price: 70000)
+
+        assert_response :success
+        assert_select '.product', 1
+        assert_select 'h2', 'Monitor Gaming'
+    end
+
     test 'can delete products' do
         assert_difference('Product.count', -1) do
             delete product_path(products(:Product1))

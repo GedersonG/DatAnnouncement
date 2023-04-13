@@ -49,6 +49,9 @@ en:
       title: 'New product'
     index:
       title: 'Products'
+      all: 'Show all'
+      min_price: 'Min price'
+      max_price: 'Max price'
     create:
       created: 'Product was successfully created.'
     update:
