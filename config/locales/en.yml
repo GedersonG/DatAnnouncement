@@ -52,6 +52,7 @@ en:
       all: 'Show all'
       min_price: 'Min price'
       max_price: 'Max price'
+      query_txt: 'Type here your filter'
     create:
       created: 'Product was successfully created.'
     update:

@@ -29,6 +29,7 @@ es:
       all: 'Mostrar todos'
       min_price: 'Precio minimo'
       max_price: 'Precio maximo'
+      query_txt: 'Filtrar por nombre'
     create:
       created: 'Producto creado'
     update:

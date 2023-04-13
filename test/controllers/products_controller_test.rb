@@ -90,6 +90,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         assert_select 'h2', 'Monitor Gaming'
     end
 
+    test 'search a product by query_txt' do
+        get products_path(query_txt: 'Monitor')
+
+        assert_response :success
+        assert_select '.product', 1
+        assert_select 'h2', 'Monitor Gaming'
+    end
+
     test 'can delete products' do
         assert_difference('Product.count', -1) do
             delete product_path(products(:Product1))
