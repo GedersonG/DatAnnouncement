@@ -98,6 +98,22 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         assert_select 'h2', 'Monitor Gaming'
     end
 
+    test 'sort products by expensive option selected' do
+        get products_path(order_by: 'expensive')
+
+        assert_response :success
+        assert_select '.product', 2
+        assert_select '.product:first-child h2', 'Silla Gaming'
+    end
+
+    test 'sort products by cheaper option selected' do
+        get products_path(order_by: 'cheaper')
+
+        assert_response :success
+        assert_select '.product', 2
+        assert_select '.product:first-child h2', 'Monitor Gaming'
+    end
+
     test 'can delete products' do
         assert_difference('Product.count', -1) do
             delete product_path(products(:Product1))

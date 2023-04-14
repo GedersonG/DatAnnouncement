@@ -30,6 +30,9 @@ es:
       min_price: 'Precio minimo'
       max_price: 'Precio maximo'
       query_txt: 'Filtrar por nombre'
+      expensive: 'Mayor precio'
+      cheaper: 'Menor precio'
+      newest: 'Mas reciente'
     create:
       created: 'Producto creado'
     update:

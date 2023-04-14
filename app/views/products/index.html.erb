@@ -9,10 +9,16 @@
             onChange: 'this.form.requestSubmit()', value: params[:min_price] %>
             <%= form.number_field :max_price, placeholder: t('.max_price'),
             onChange: 'this.form.requestSubmit()', value: params[:max_price] %>
+
+            <%= form.select :order_by, options_for_select(Product::ORDER_BY.
+            keys.map{ |order| [t(".#{order}"),order] }, params[:order_by]),
+            {}, { onChange: 'this.form.requestSubmit()' } %>
         <% end %>
         <%= link_to t('.all'), products_path %>
         <%= render partial: 'partials/category_index', collection: @categories %>
     </div>
-    <%= render partial: 'partials/product', collection: @products %>
+    <div class="products">
+        <%= render partial: 'partials/product', collection: @products %>
+    </div>
 <% end %>
 </div>
