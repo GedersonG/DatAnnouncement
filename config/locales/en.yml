@@ -43,6 +43,10 @@ en:
   common:
     confirm: '¿Are you sure?'
   hello: "Hello world"
+  auth:
+    users:
+      create:
+        created: 'Your account has benn created successfully'
   products:
     edit:
       title: 'Edit product'

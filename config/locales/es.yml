@@ -20,6 +20,10 @@ es:
   common:
     confirm: '¿Estás seguro?'
   hello: "Hola mundo"
+  auth:
+    users:
+      create:
+        created: 'Tu cuenta ha sido creada correctamente'
   products:
     edit:
       title: 'Editar producto'
