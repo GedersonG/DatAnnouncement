@@ -1,4 +1,5 @@
 es:
+  meta_title: 'Una solucion moderna para el mercado'
   activerecord:
     models:
       product: 'Producto'

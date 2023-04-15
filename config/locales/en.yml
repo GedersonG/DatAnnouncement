@@ -30,6 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  meta_title: 'A modern solution for the market'
   activerecord:
     models:
       product: Product
