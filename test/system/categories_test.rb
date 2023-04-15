@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class CategoriesTest < ApplicationSystemTestCase
   setup do
-    @category = categories(:one)
+    @category = categories(:portatiles)
   end
 
   test "visiting the index" do

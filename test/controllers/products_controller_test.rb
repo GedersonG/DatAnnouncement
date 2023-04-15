@@ -94,7 +94,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         get products_path(query_txt: 'Monitor')
 
         assert_response :success
-        assert_select '.product', 1
+        assert_select '.product', 2
         assert_select 'h2', 'Monitor Gaming'
     end
 

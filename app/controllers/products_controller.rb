@@ -1,24 +1,9 @@
 class ProductsController < ApplicationController
     def index
         @categories = Category.all.order(name: :asc).load_async
-        @products = Product.all.with_attached_photo
-        if params[:category_id]
-            @products = @products.where(category_id: params[:category_id])
-        end
-        if params[:min_price].present?
-            @products = @products.where('price >= ?', params[:min_price])
-        end
-        if params[:max_price].present?
-            @products = @products.where('price <= ?', params[:max_price])
-        end
-        if params[:query_txt].present?
-            @products = @products.search_full_text(params[:query_txt])
-        end
-        orders = Product::ORDER_BY.fetch(params[:order_by]&.to_sym, 'created_at DESC')
 
-        @products = @products.order(orders).load_async
 
-        @pagy, @products = pagy_countless(@products, items: 4)
+        @pagy, @products = pagy_countless(FindProducts.new.callback(params).load_async, items: 4)
     end
 
     def show
