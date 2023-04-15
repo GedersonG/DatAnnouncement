@@ -47,6 +47,10 @@ en:
     users:
       create:
         created: 'Your account has benn created successfully'
+    sessions:
+      create:
+        created: '¡Welcome to DatAge!'
+        failed: 'Invalid login!'
   products:
     edit:
       title: 'Edit product'

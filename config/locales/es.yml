@@ -24,6 +24,10 @@ es:
     users:
       create:
         created: 'Tu cuenta ha sido creada correctamente'
+    sessions:
+      create:
+        created: '¡Bienvenido a DatAge!'
+        invald: 'Ingreso invalido'
   products:
     edit:
       title: 'Editar producto'
