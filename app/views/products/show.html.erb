@@ -1,13 +1,15 @@
-<%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
+<div>
+    <%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
 
-<h1 class="title"><%= @product.title %></h1>
+    <h1 class="title"><%= @product.title %></h1>
 
-<h3> Descripcion: </h3><p class="description"><%= @product.description %> </p>
+    <h3> Descripcion: </h3><p class="description"><%= @product.description %> </p>
 
-<span class="price"> <%= @product.price %>$ </span>
-
+    <span class="price"> <%= @product.price %>$ </span>
+</div>
 <%= link_to 'Editar producto', edit_product_path(@product) %>
 <%= link_to 'Eliminar producto', product_path(@product), data: {
     turbo_method: 'delete',
     turbo_confirm: t('common.confirm')
 } %>
+

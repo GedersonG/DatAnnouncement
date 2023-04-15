@@ -17,6 +17,8 @@ class ProductsController < ApplicationController
         orders = Product::ORDER_BY.fetch(params[:order_by]&.to_sym, 'created_at DESC')
 
         @products = @products.order(orders).load_async
+
+        @pagy, @products = pagy_countless(@products, items: 4)
     end
 
     def show
