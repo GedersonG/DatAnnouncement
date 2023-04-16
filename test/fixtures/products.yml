@@ -3,9 +3,11 @@ Product1:
   description: 20 Pulgadas
   price: 40000
   category: perifericos
+  user: user1
 
 Product2:
   title: Silla Gaming
   description: 100% Cuero
   price: 400000
   category: accesorios
+  user: user1

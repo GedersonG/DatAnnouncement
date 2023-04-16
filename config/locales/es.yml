@@ -19,6 +19,7 @@ es:
               blank: 'El precio no puede estar vacio'
   common:
     confirm: '¿Estás seguro?'
+    not_logged_in: 'Debes ingresar o crear una cuenta'
   hello: "Hola mundo"
   auth:
     users:

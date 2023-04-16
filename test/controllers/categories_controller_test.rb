@@ -2,6 +2,7 @@ require "test_helper"
 
 class CategoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
+    login # Login for validate test
     @category = categories(:portatiles)
   end
 
