@@ -40,6 +40,13 @@ en:
         description: 'Description'
         price: 'Price'
         photo: 'Photo'
+  partials:
+    header:
+      add: 'Add product'
+      categories: 'Categories'
+      login: 'Log In'
+      logout: 'Log Out'
+      register: 'Sign up'
   common:
     confirm: '¿Are you sure?'
     not_logged_in: 'You have to login or create an account'
@@ -52,6 +59,8 @@ en:
       create:
         created: '¡Welcome to DatAge!'
         failed: 'Invalid login!'
+      destroy:
+        destroyed: 'Log out successfully'
   products:
     edit:
       title: 'Edit product'

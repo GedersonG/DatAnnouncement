@@ -29,6 +29,15 @@ es:
       create:
         created: '¡Bienvenido a DatAge!'
         invald: 'Ingreso invalido'
+      destroy:
+        destroyed: 'Te has desconectado correctamente'
+  partials:
+    header:
+      add: 'Agregar producto'
+      categories: 'Categorias'
+      login: 'Ingresar'
+      logout: 'Salir'
+      register: 'Registrarse'
   products:
     edit:
       title: 'Editar producto'
