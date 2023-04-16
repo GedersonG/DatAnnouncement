@@ -26,10 +26,11 @@ class ProductsController < ApplicationController
     end
 
     def edit
-        find_product
+        authorize! find_product # Protection method
     end
 
     def update
+        authorize! find_product # Protection method
         if find_product.update(product_params)
             redirect_to products_path, notice: t('.updated')
         else
@@ -38,6 +39,7 @@ class ProductsController < ApplicationController
     end
 
     def destroy
+        authorize! find_product # Protection method
         find_product.destroy
         redirect_to products_path, notice: t('.destroyed')
     end

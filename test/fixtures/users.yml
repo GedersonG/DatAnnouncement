@@ -4,13 +4,16 @@ user1:
   email: email1@datage.com
   username: anyone
   password_digest: <%= BCrypt::Password.create('secretaryship', cost: 5) %>
+  role: admin
 
 user2:
   email: email2@datage.com
   username: person
   password_digest: <%= BCrypt::Password.create('secretaryship', cost: 5) %>
+  role: user
 
 user3:
   email: email3@datage.com
   username: otherperson
   password_digest: <%= BCrypt::Password.create('secretaryship', cost: 5) %>
+  role: user

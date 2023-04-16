@@ -20,6 +20,7 @@ es:
   common:
     confirm: '¿Estás seguro?'
     not_logged_in: 'Debes ingresar o crear una cuenta'
+    not_authorized: 'No tienes permisos para ejecutar esa accion'
   hello: "Hola mundo"
   auth:
     users:
