@@ -12,9 +12,13 @@
 <% if @product.owner? %>
   <%= link_to 'Editar producto', edit_product_path(@product) %>
   <%= link_to 'Eliminar producto', product_path(@product), data: {
-      turbo_method: 'delete',
+      turbo_method: :delete,
       turbo_confirm: t('common.confirm')
   } %>
 <% end %>
 
 <%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
+
+<%= link_to '⭐',  favorites_path(product_id: @product.id), data: {
+  turbo_method: :post
+} %>
