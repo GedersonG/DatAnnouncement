@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
         @categories = Category.all.order(name: :asc).load_async
 
         @pagy, @products = pagy_countless(FindProducts.new.
-          callback(products_params_index).load_async, items: 4)
+          callback(products_params_index).load_async, items: 6)
     end
 
     def show

@@ -21,6 +21,7 @@ es:
     confirm: '¿Estás seguro?'
     not_logged_in: 'Debes ingresar o crear una cuenta'
     not_authorized: 'No tienes permisos para ejecutar esa accion'
+    user_not_found: 'No se pudo encontrar ese usuario.'
   hello: "Hola mundo"
   auth:
     users:
@@ -42,6 +43,9 @@ es:
   products:
     edit:
       title: 'Editar producto'
+    show:
+      detail: 'Anuncio publicado por %{username}'
+      view_more_products: 'Ver mas productos de %{username}'
     new:
       title: 'Nuevo producto'
     index:
