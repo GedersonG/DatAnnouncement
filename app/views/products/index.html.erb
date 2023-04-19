@@ -17,10 +17,12 @@
         <%= link_to t('.all'), products_path %>
         <%= render partial: 'partials/category_index', collection: @categories %>
     </div>
+    <%=turbo_frame_tag :products do %>
       <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products' do %>
         <%= render partial: 'partials/product', collection: @products %>
         <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products',
                             src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+        <% end %>
       <% end %>
     <% end %>
 </div>

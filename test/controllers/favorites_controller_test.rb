@@ -16,6 +16,12 @@ class FavoritesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to product_path(@product)
   end
 
+  test "should return my favorites" do
+    get favorites_url
+
+    assert_response :success
+  end
+
   test "should unfavorite" do
     # 'Favorite.count'
     assert_difference('Favorite.count', -1) do

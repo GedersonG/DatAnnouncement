@@ -40,6 +40,7 @@ es:
       login: 'Ingresar'
       logout: 'Salir'
       register: 'Registrarse'
+      favorites: 'Mis favoritos'
   products:
     edit:
       title: 'Editar producto'
@@ -79,3 +80,6 @@ es:
       updated: 'La categoria fué actualizada satisfactoriamente.'
     destroy:
       destroyed: 'La categoria fué eliminada satisfactoriamente.'
+  favorites:
+    index:
+      title: 'Mis favoritos'

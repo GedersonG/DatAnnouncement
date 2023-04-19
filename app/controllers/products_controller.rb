@@ -44,16 +44,17 @@ class ProductsController < ApplicationController
         redirect_to products_path, notice: t('.destroyed')
     end
 
+    private
+
     def find_product
         @product = Product.find(params[:id])
     end
 
-    def products_params_index
-        params.permit(:category_id, :max_price, :min_price, :order_by, :query_txt)
+    def product_params
+        params.require(:product).permit(:title, :description, :price, :photo, :category_id)
     end
 
-    private
-    def product_params
-        params.require(:product).permit(:title, :description, :price, :photo, :category_id, :page)
+    def products_params_index
+        params.permit(:category_id, :max_price, :min_price, :order_by, :query_txt, :page, :favorites)
     end
 end

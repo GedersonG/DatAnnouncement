@@ -10,6 +10,7 @@
     turbo_method: :delete,
     turbo_confirm: t('common.confirm')
   } %>
+  <%= link_to t('.favorites'), favorites_url %>
   <% if Current.user.role == 'admin' %>
     <%= link_to t('.categories'), categories_path %>
   <% end %>

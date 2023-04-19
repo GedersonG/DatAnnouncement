@@ -47,6 +47,7 @@ en:
       login: 'Log In'
       logout: 'Log Out'
       register: 'Sign up'
+      favorites: 'My favorites'
   common:
     confirm: '¿Are you sure?'
     not_logged_in: 'You have to login or create an account'
@@ -102,3 +103,6 @@ en:
       updated: "Category was successfully updated."
     destroy:
       destroyed: "Category was successfully destroyed."
+  favorites:
+    index:
+      title: 'My favorites'
