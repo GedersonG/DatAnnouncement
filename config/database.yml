@@ -91,6 +91,6 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-  database: railwayapp_production
-  username: railwayapp
+  database: railway
+  username: postgres
   password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
