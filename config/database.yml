@@ -90,6 +90,7 @@ test:
 #
 production:
   <<: *default
-  database: DatAnnouncement_production
-  username: DatAnnouncement
-  password: <%= ENV["DATANNOUNCEMENT_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
+  database: railwayapp_production
+  username: railwayapp
+  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
