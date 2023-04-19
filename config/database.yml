@@ -58,7 +58,7 @@ development:
 test:
   <<: *default
   database: DatAnnouncement_test
-  username: postgres
+  # username: postgres
 
   # The password associated with the postgres role (username).
   # password: password
