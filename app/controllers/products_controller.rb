@@ -47,7 +47,7 @@ class ProductsController < ApplicationController
     private
 
     def find_product
-        @product = Product.find(params[:id])
+        @product ||= Product.find(params[:id])
     end
 
     def product_params
@@ -55,6 +55,6 @@ class ProductsController < ApplicationController
     end
 
     def products_params_index
-        params.permit(:category_id, :max_price, :min_price, :order_by, :query_txt, :page, :favorites)
+        params.permit(:category_id, :max_price, :min_price, :order_by, :query_txt, :page, :favorites, :user_id)
     end
 end

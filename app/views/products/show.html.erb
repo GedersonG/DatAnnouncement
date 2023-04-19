@@ -19,14 +19,4 @@
 
 <%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
 
-<% if Current.user %>
-  <% if @product.favorite %>
-    <%= link_to '🌟',  favorite_path(@product.id), data: {
-      turbo_method: :delete
-    } %>
-  <% else %>
-    <%= link_to '⭐',  favorites_path(product_id: @product.id), data: {
-      turbo_method: :post
-    } %>
-  <% end %>
-<% end %>
+<%= render partial: 'partials/favorite', locals: {product: @product} %>
