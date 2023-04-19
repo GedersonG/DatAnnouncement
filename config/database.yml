@@ -90,7 +90,8 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: railwayapp_production
-  username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["postgresql://postgres:sVIw8Svn2ZWGDhq2WM8B@containers-us-west-21.railway.app:6054/railway"] %>
+  database: railway
+  username: postgres
+  password: <%= ENV["sVIw8Svn2ZWGDhq2WM8B"] %>
+
