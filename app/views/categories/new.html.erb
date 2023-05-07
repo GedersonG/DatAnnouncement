@@ -1,9 +1,12 @@
+<div class="title text-center">
 <h1><%= t('.title') %></h1>
+</div>
 
 <%= render "form", category: @category %>
 
 <br>
 
-<div>
-  <%= link_to t('.back'), categories_path %>
+<div class="botonback text-center">
+  <%= link_to t('.back'), categories_path,class: "btn btn-secondary" %>
 </div>
+

@@ -1,33 +1,31 @@
-<%= form_with model: @product do |form| %>
+<div class="container">
+  <%= form_with model: @product do |form| %>
     <% @product.errors.full_messages.each do |err| %>
-        <div>
-            <%= err %>
-        </div>
+      <div class="alert alert-danger">
+        <%= err %>
+      </div>
     <% end %>
-    <div class="mt-4">
-        <%= form.label :titulo %>
-        <%= form.text_field :title%>
+    
+    <div class="form-group">
+      <%= form.label :titulo %>
+      <%= form.text_field :title, class: "form-control" %>
     </div>
-    <br>
-    <div class="mt-4">
-        <%= form.label :descripcion %>
-        <%= form.text_area :description%>
+    <div class="form-group">
+      <%= form.label :descripcion %>
+      <%= form.text_area :description, class: "form-control" %>
     </div>
-    <br>
-    <div class="mt-4">
-        <%= form.label :precio %>
-        <%= form.number_field :price%>
+    <div class="form-group">
+      <%= form.label :precio %>
+      <%= form.number_field :price, class: "form-control" %>
     </div>
-    <br>
-    <div>
-        <%= form.label :category_id %>
-        <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+    <div class="form-group">
+      <%= form.label :category_id %>
+      <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, {}, { class: "form-control" } %>
     </div>
-    <br>
-    <div class="mt-4">
-        <%= form.label :photo %>
-        <%= form.file_field :photo%>
+    <div class="form-group">
+      <%= form.label :photo %>
+      <%= form.file_field :photo, class: "form-control-file" %>
     </div>
-    <%= form.submit %>
-    <br>
-<% end %>
+    <%= form.submit "Guardar", class: "btn btn-primary" %>
+  <% end %>
+</div>

@@ -648,6 +648,38 @@ button {
 }
 
 
+.title{
+
+margin-bottom: 20px;
+}
+
+
+.card {
+     align-items: center;
+     width: 500px;
+
+.text-center{
+     align-items: center;
+
+}
+
+}
+.custom-file-label::after {
+     content: "Choose file...";
+   }
+   .custom-file-input:lang(en)~.custom-file-label::after {
+     content: "Browse";
+   }
+   .custom-file-label {
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     cursor: pointer;
+   }
+   img#image-preview {
+     display: block;
+     margin: auto
+   }
 /** end Our  Glasses section **/
 
 
