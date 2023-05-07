@@ -37,7 +37,7 @@ development:
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  # host: db <- production
+  # host: db 
   host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
@@ -67,7 +67,7 @@ test:
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  # host: db <- production
+  # host: db 
   host: localhost
 
 # As with config/credentials.yml, you never want to store sensitive information,
