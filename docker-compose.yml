@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: DatAnnouncement_development
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  tarea:
+    build: .
+    ports:
+      - "8105:3000"
+    volumes:
+      - .:/home/app
+#    env_file:
+#      - ./.env
+    command: rails s -b 0.0.0.0
+    depends_on:
+      - db
+

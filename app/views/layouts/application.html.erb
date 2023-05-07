@@ -9,9 +9,11 @@
     <script src="https://kit.fontawesome.com/5325d6dcc2.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "style" %>
   </head>
 
   <body>
+  <h1>hola</h1>
     <%= render 'partials/flash' %>
     <%= render 'partials/header' %>
     <%= yield %>

@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# README
 
-Things you may want to cover:
+* Run dockers
+sudo docker-compose up -d --build
 
-* Ruby version
+* Check status (view ID docker)
+sudo docker container ps
 
-* System dependencies
+* Remember init DB commands
+more Procfile
 
-* Configuration
+* Exec rake for init DB
+sudo docker exec -it ID rake db:migrate                          
+sudo docker exec -it ID rake db:fixtures:load
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
