@@ -1,9 +1,10 @@
-<div class="col-xl- col-lg-2 col-md-3 col-sm-3">
-  <div class="glasses_box">
-    <%= link_to product_path(product.id), class: 'product', 'data-turbo-frame': '_top' do %>
-      <figure><%= image_tag product.photo, width: '100%', class: 'img-fluid' if product.photo.attached? %></figure>
-      <h3><span class="blu">$</span><%= product.price %></h3>
-      <p><%= product.title %></p>
-    <% end %>
-  </div>
-</div>
+
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+      <div class="glasses_box">
+      <%= link_to product_path(product.id), class: 'product', 'data-turbo-frame': '_top' do %>
+        <figure><%= image_tag product.photo, width: '100%', class: 'img-fluid' if product.photo.attached? %></figure>
+        <h3><span class="blu">$</span><%= product.price %></h3>
+        <p><%= product.title %></p>
+      <% end %>
+    </div>
+      </div>

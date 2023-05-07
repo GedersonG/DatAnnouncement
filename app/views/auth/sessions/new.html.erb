@@ -1,14 +1,23 @@
-<%= form_with(url: sessions_path) do |form| %>
-  <div>
-    <%= form.label :login, style: "display: block" %>
-    <%= form.text_field :login, required: true %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/lessons/lsn-60770-5f695c1f80897.jpeg" class="img-fluid" alt="Imagen">
+    </div>
+    <div class="col-md-6">
+      <%= form_with(url: sessions_path) do |form| %>
+        <div class="mb-6">
+          <%= form.label :login, class: "form-label" %>
+          <%= form.text_field :login, class: "form-control", required: true %>
+        </div>
+        <div class="mb-4">
+          <%= form.label :password, class: "form-label" %>
+          <%= form.password_field :password, class: "form-control", required: true %>
+        </div>
+        <div class="d-grid gap-2">
+          <%= form.submit "Log In", class: "btn btn-primary btn-block" %>
+        </div>
+      <% end %>
+    </div>
   </div>
-  <div>
-    <%= form.label :password, style: "display: block" %>
-    <%= form.password_field :password, required: true %>
-  </div>
+</div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>

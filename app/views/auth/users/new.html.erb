@@ -1,24 +1,33 @@
-<%= form_with(model: @user) do |form| %>
-  <% @user.errors.full_messages.each do |err| %>
-    <div>
-      <%= err %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/lessons/lsn-60770-5f695c1f80897.jpeg" class="img-fluid" alt="Imagen">
     </div>
-  <% end %>
+    <div class="col-md-6">
+      <%= form_with(model: @user) do |form| %>
+        <% @user.errors.full_messages.each do |err| %>
+          <div class="alert alert-danger">
+            <%= err %>
+          </div>
+        <% end %>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.email_field :email, required: true %>
-  </div>
-  <div>
-    <%= form.label :username, style: "display: block" %>
-    <%= form.text_field :username, required: true %>
-  </div>
-  <div>
-    <%= form.label :password, style: "display: block" %>
-    <%= form.password_field :password, required: true %>
-  </div>
+        <div class="mb-3">
+          <%= form.label :email, class: "form-label" %>
+          <%= form.email_field :email, class: "form-control", required: true %>
+        </div>
+        <div class="mb-3">
+          <%= form.label :username, class: "form-label" %>
+          <%= form.text_field :username, class: "form-control", required: true %>
+        </div>
+        <div class="mb-3">
+          <%= form.label :password, class: "form-label" %>
+          <%= form.password_field :password, class: "form-control", required: true %>
+        </div>
 
-  <div>
-    <%= form.submit %>
+        <div class="d-grid gap-2">
+          <%= form.submit "Sign Up", class: "btn btn-primary btn-block" %>
+        </div>
+      <% end %>
+    </div>
   </div>
-<% end %>
+</div>
