@@ -16,6 +16,26 @@
 
 ## 1. 🤔 General Information
 
+### web application 
+
+DatAnnouncement is a web application that offers a wide variety of products to its users. The application allows you to visualize any type of item with its detailed information such as name, price and description, and also allows you to organize them by categories.
+
+We offer our customers the opportunity to offer products in a fast and secure way. DatAnnouncement provides a space to offer products online, with an easy to use interface, with features that make the online experience easy and convenient for users.
+
+#### Add to Favorites:
+If you find yourself interested in a product, but are not sure whether to purchase it at that time, you can add it to your "Favorites". When you click on the ⭐ on the product page, it will be saved in a list of products that you can access from your account at any time. This allows you to keep track of the products you are interested in and view them later without having to search for them again.
+
+#### Filtering:
+At DatAnnouncement, we offer filtering options so you can find the products you need faster and more efficiently. You can filter search results by price, category, location, and other criteria to narrow results to specific products. In addition, you can also sort results by price, popularity, novelty, and more.
+
+#### Add, edit or delete products:
+As a DatAnnouncement user, you can add new products, edit your existing product information and delete unwanted products from your account. All of this is easy to do by logging into the product and selecting the edit or delete option.
+
+#### Add, edit or delete categories:
+As an administrator in DatAnnouncement, you can add, edit or delete categories from the configuration section of the web application.
+
+
+
 ## 2. 💻 Architecture
   
 
