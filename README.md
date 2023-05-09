@@ -31,7 +31,7 @@ At DatAnnouncement, we offer filtering options so you can find the products you 
 #### [![Add, edit or delete products](https://img.shields.io/badge/Add,_edit_or_delete_products-succes)]
 As a DatAnnouncement user, you can add new products, edit your existing product information and delete unwanted products from your account. All of this is easy to do by logging into the product and selecting the edit or delete option.
 
-#### Add, edit or delete categories: [![Add, edit or delete categories](https://img.shields.io/badge/Add,_edit_or_delete_categories-informational)]
+#### ![Add, edit or delete categories](https://img.shields.io/badge/Add,_edit_or_delete_categories-informational)]
 As an administrator in DatAnnouncement, you can add, edit or delete categories from the configuration section of the web application.
 
 <div align="center">
