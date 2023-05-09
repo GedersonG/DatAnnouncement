@@ -5,14 +5,14 @@
 [![DatAnnouncement](https://raw.githubusercontent.com/JhonnyGCH/img/9b09e6adb1a6e47da9bd8c1891d44761b7770104/DatAnnouncement.png)]()
 
 ## Table of contents 
-1. [General Information](#1--general-information)
-2. [Architecture](#2--architecture)
-3. [Tecnologies](#3--tecnologies)
-4. [Instalation](#4-%EF%B8%8F-instalation)
-5. [License](#5--license)
-6. [Authors](#6-%EF%B8%8F-authors)
-7. [Academic Institution](#7--academic-institution)
-8. [Documentation](#8--documentation)
+1. 🤔 [General Information](#1--general-information)
+2. 💻 [Architecture](#2--architecture)
+3. 🔗 [Tecnologies](#3--tecnologies)
+4. ⚡ [Instalation](#4-%EF%B8%8F-instalation)
+5. 📫 [License](#5--license)
+6. 👯‍ [Authors](#6-%EF%B8%8F-authors)
+7. 🏛 [Academic Institution](#7--academic-institution)
+8. 👩‍💻 [Documentation](#8--documentation)
 
 ## 1. 🤔 General Information
 
@@ -50,9 +50,7 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 | [![HTML5](https://img.shields.io/badge/HTML5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)             | HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript). |
 | [![CSS](https://img.shields.io/badge/CSS-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)                                     | Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. |
 | [![Ruby on Rails](https://img.shields.io/badge/Ruby_On_Rails-red)](https://rubyonrails.org/) | Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.  |
-| [![Bootstrap](https://img.shields.io/badge/Bootsrap-purple)](https://getbootstrap.com/) | Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.
-
-Bootstrap 5 is the newest version of Bootstrap |
+| [![Bootstrap](https://img.shields.io/badge/Bootsrap-purple)](https://getbootstrap.com/) | Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap |
 | [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://www.docker.com/products/docker-desktop/) | Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
 
 ## 4. ⚡️ Instalation
