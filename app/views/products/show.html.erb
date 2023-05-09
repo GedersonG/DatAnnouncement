@@ -1,15 +1,16 @@
 <div class="d-flex justify-content-center align-items-center">
     <div class="card mb-3">
-      <div>
+      <div class="username">
         <%= t('.detail', username: @product.user.username) %>
       </div>
+
     <% if @product.photo.attached? %>
       <%= image_tag @product.photo, class: "card-img-top" %>
     <% end %>
     <div class="card-body text-center">
-      <h5 class="card-title"><%= @product.title %></h5>
+      <h1 class="card-title"><%= @product.title %></h1>
       <p class="card-text"><%= @product.description %></p>
-      <p class="card-text"><small class="text-muted"><%= @product.price %> $</small></p>
+      <p class="card-text-price">$<%= @product.price %></p>
       <% if @product.owner? %>
         <%= link_to 'Editar producto', edit_product_path(@product), class: "btn btn-primary mr-2" %>
         <%= link_to 'Eliminar producto', product_path(@product), method: :delete, data: {
@@ -17,8 +18,12 @@
             confirm: t('common.confirm')
         }, class: "btn btn-danger" %>
       <% end %>
-      <%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
-      <%= render partial: 'partials/favorite', locals: {product: @product} %>
+      
     </div>
+    <div class="text-center" >
+       <%= link_to t('.view_more_products', username: @product.user.username), user_path(@product.user.username) %>
+      <%= render partial: 'partials/favorite', locals: {product: @product} %>
+      </div>
+     
   </div>
 </div>

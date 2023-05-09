@@ -1,5 +1,6 @@
-<div>
-  <%= @user.username %>
+<div class="container text-center">
+<div class="username">
+ Productos de <%=  @user.username %>
 </div>
-
 <%= turbo_frame_tag :products, src: products_path(user_id: @user.id) %>
+<div>
