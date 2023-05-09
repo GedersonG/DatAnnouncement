@@ -55,6 +55,43 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 
 ## 4. ⚡️ Instalation
 
+![Local](https://img.shields.io/badge/Local-yellow)
+
+* For the local installation of the project by download, you can do it by the following link: Download
+
+* Go to your Downloads folder on your computer
+* Unzip the .zip file named DatAnnouncement-main
+
+![GitHub](https://img.shields.io/badge/GitHub-important)
+* Perform a Fork. This will allow you to have a copy of the repository in your own account.
+
+* Cloning the project. By cloning the project into your IDE of choice you can edit and modify it to your liking. Or you can make a Local copy of your new repository.
+
+
+### ![How to run](https://img.shields.io/badge/How_to_run-blueviolet)
+
+To run the application, it is required to have previously installed:
+
+* Ruby  3.1.4 (https://rubyinstaller.org/downloads/ --> For windows)
+   
+* PostgreSQL >14 
+
+
+Para ejecutar el proyecto en una terminal:
+
+* blundle install -> Windows (Install package manager Blundle)
+
+* Bundle (Install the Gemfile gems)
+
+* rails db:migrate (Create tables and relationships DB)
+
+* rails db:fixtures:load (Load testing fixtures)
+
+* Rails server (Run project)
+
+Ruta: config/database.yml --> Development and test must have the postgres credentials installed.
+
+
 ## Run in Docker
 ### Linux
 
@@ -80,26 +117,6 @@ docker container ps
 docker exec -it <ID> rake db:migrate                          
 docker exec -it <ID> rake db:fixtures:load
 
-### Hot to run
-
-(Translate) Para ejecutar la aplicacion se requiere tener instalado previamente
-
-* Ruby --> 3.1.4 (https://rubyinstaller.org/downloads/  --> Para windows)
-* PostgreSQL --> (>14)
-
-Para ejecutar el proyecto en una terminal:
-
-* blundle install -> Windows (Instala gestor de paqueter Blundle)
-
-* Bundle (Instala las gemas del Gemfile)
-
-* rails db:migrate (Crea las tablas y relaciones DB)
-
-* rails db:fixtures:load (Carga las fixtures de testing)
-
-* Rails server (Run project)
-
-Ruta: config/database.yml --> Desarrollo y test debe tener las credenciales postgres instaladas
 
 ## 5. 📫 License
 
