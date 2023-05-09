@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: password
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
-  tarea:
+  production:
     build: .
     ports:
       - "8105:3000"
