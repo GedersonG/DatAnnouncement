@@ -1,5 +1,3 @@
-# README
-
 # DatAnnouncement
 
 [![DatAnnouncement](https://raw.githubusercontent.com/JhonnyGCH/img/9b09e6adb1a6e47da9bd8c1891d44761b7770104/DatAnnouncement.png)]()
