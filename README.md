@@ -34,8 +34,9 @@ As a DatAnnouncement user, you can add new products, edit your existing product 
 #### Add, edit or delete categories:
 As an administrator in DatAnnouncement, you can add, edit or delete categories from the configuration section of the web application.
 
-[![products](https://devloteq.com/wp-content/uploads/2020/07/tiendas-en-linea.png)]()
-
+<div align="center">
+   <img src="https://devloteq.com/wp-content/uploads/2020/07/tiendas-en-linea.png" width="400" height="130">
+</div>
 
 
 ## 2. 💻 Architecture
