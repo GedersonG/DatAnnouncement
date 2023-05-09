@@ -24,9 +24,10 @@
 
 | Tecnologies                                                                        | Use                                                                            |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [![Azure DevOps](https://img.shields.io/badge/Azure_Devops-blue)](https://azure.microsoft.com/es-es/products/devops)             |  |
-| [![JavaScript](https://img.shields.io/badge/JavaScript-yellow)](https://www.javascript.com/)                                     |  |
-| [![Marketplace Visual Studio Code](https://img.shields.io/badge/Marketplace_Visual_Studio_Code-red)](https://marketplace.visualstudio.com/vscode) | 
+| [![HTML5](https://img.shields.io/badge/HTML5-orange)](https://azure.microsoft.com/es-es/products/devops)             |  |
+| [![CSS](https://img.shields.io/badge/CSS-blue)](https://www.javascript.com/)                                     |  |
+| [![Ruby on Rails](https://img.shields.io/badge/Ruby_On_Rails-red)](https://marketplace.visualstudio.com/vscode) |  |
+| [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://marketplace.visualstudio.com/vscode) | 
 
 ## 4. ⚡️ Instalación
 
@@ -96,6 +97,14 @@ Ruta: config/database.yml --> Desarrollo y test debe tener las credenciales post
 
   
 ## 7. 🏛 Academic Institution
+Project developed in the subject Software Architecture of the [Systems Engineering Program] of the [Universidad Francisco de Paula Santander]
+
+   [Systems Engineering Program]:<https://ingsistemas.cloud.ufps.edu.co/>
+   [Universidad Francisco de Paula Santander]:<https://ww2.ufps.edu.co/>
+ 
+ <div align="center">
+   <img src="https://ingsistemas.cloud.ufps.edu.co/rsc/img/logo_vertical_ingsistemas_ht180.png" width="400" height="130">
+</div>
 
   
 ## 8. 👩‍💻 Documentation
