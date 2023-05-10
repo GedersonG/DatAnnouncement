@@ -100,7 +100,7 @@ To run the project on a terminal:
 
 Ruta: config/database.yml --> Development and test must have the postgres credentials installed.
 
-You must make sure that the credentials match your credentials configured in your PosgreSQL in **database.yml**.
+![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red): You must make sure that the credentials match your credentials configured in your PosgreSQL in **database.yml**.
 
 ```sh
 # the same name as the operating system user running Rails.
