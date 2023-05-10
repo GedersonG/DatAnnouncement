@@ -6,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
 
 @import url(css/animate.min.css);
-@import url(css/normalize.css);
 @import url(css/font-awesome.min.css);
-@import url(css/swiper.min.css);
 
 * { box-sizing: border-box !important;}
 
@@ -56,7 +54,6 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
      letter-spacing: 0;
-     font-weight: normal;
      position: relative;
      padding: 0 0 10px 0;
      font-weight: normal;
@@ -183,13 +180,15 @@ button {
 .title{margin-bottom: 20px;}
 
 .card {
-     align-items: center;
-     width: 500px;
+    align-items: center;
+    width: 500px;
+}
 
 .text-center{
      align-items: center;
-}}
+}
 
 .header {
      position: inherit;
-     background: #03cafc;}
+     background: #03cafc;
+}
