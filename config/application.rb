@@ -1,6 +1,8 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -20,7 +22,7 @@ module DatAnnouncement
     # config.eager_load_paths << Rails.root.join("extras")
 
     # available lenguages
-    config.i18n.available_locales = [:en, :es]
+    config.i18n.available_locales = %i[en es]
 
     # default lenguage
     config.i18n.default_locale = :en

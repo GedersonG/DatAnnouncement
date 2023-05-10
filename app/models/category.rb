@@ -1,5 +1,7 @@
-class Category < ApplicationRecord
-    validates :name, presence: true
+# frozen_string_literal: true
 
-    has_many :products, dependent: :restrict_with_exception
+class Category < ApplicationRecord
+  validates :name, presence: true
+
+  has_many :products, dependent: :restrict_with_exception
 end

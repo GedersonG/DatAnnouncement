@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   skip_before_action :protect_pages, only: :show
   def show

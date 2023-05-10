@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProductPolicy < BasePolicy
   def edit
     record.owner?
