@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 class FindProducts
   attr_reader :products
+
   def initialize(products = initial_scope)
     @products = products
   end
@@ -41,13 +44,13 @@ class FindProducts
   def filter_by_category_id(scoped, category_id)
     return scoped unless category_id.present?
 
-    scoped.where(category_id: category_id)
+    scoped.where(category_id:)
   end
 
   def filter_by_user_id(scoped, user_id)
     return scoped unless user_id.present?
 
-    scoped.where(user_id: user_id)
+    scoped.where(user_id:)
   end
 
   def filter_by_favorites(scoped, favorites)
@@ -57,6 +60,7 @@ class FindProducts
   end
 
   private
+
   def initial_scope
     Product.with_attached_photo
   end

@@ -1,7 +1,8 @@
-class FavoritesController < ApplicationController
-  def index
+# frozen_string_literal: true
 
-  end
+class FavoritesController < ApplicationController
+  def index; end
+
   def create
     product.favorite!
     respond_to do |format|
@@ -9,7 +10,8 @@ class FavoritesController < ApplicationController
         redirect_to product_path(product)
       end
       format.turbo_stream do
-        render turbo_stream: turbo_stream.replace("favorite-icon", partial: "partials/favorite", locals: { product: product })
+        render turbo_stream: turbo_stream.replace('favorite-icon', partial: 'partials/favorite',
+                                                                   locals: { product: })
       end
     end
   end
@@ -21,7 +23,8 @@ class FavoritesController < ApplicationController
         redirect_to product_path(product), status: :see_other
       end
       format.turbo_stream do
-        render turbo_stream: turbo_stream.replace("favorite-icon", partial: "partials/favorite", locals: { product: product })
+        render turbo_stream: turbo_stream.replace('favorite-icon', partial: 'partials/favorite',
+                                                                   locals: { product: })
       end
     end
   end
