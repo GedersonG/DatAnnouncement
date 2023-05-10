@@ -39,6 +39,14 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 
 ## 2. 💻 Architecture
   
+  The system is designed on a monolith architecture where all the components of the system are located on a single block of code. Being built with Ruby on Rails, the application has the characteristics of this technology, this implies that the code structure follows the MVC-I pattern and also appropriates the CoC (Convention on Configuration) concept that allows the programmer not to worry about defining basic conventions and focus on unconventional ones. An example of this is reflected in the model where we have the model "product" and from this Ruby and Rails can interpret that the table of this entity will be called "products".
+  
+  
+  
+  <div align="center">
+   <img src="https://raw.githubusercontent.com/JhonnyGCH/img/main/arquitectura.png" width="800" height="340">
+</div>
+  
 
 ## 3. 🔗 Tecnologies
 
@@ -48,14 +56,15 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 | [![HTML5](https://img.shields.io/badge/HTML5-orange)](https://developer.mozilla.org/en-US/docs/Web/HTML)             | HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript). |
 | [![CSS](https://img.shields.io/badge/CSS-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)                                     | Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. |
 | [![Ruby on Rails](https://img.shields.io/badge/Ruby_On_Rails-red)](https://rubyonrails.org/) | Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.  |
-| [![Bootstrap](https://img.shields.io/badge/Bootsrap-purple)](https://getbootstrap.com/) | Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap |
-| [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://www.docker.com/products/docker-desktop/) | Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
+| [![Bootstrap](https://img.shields.io/badge/Bootstrap-purple)](https://getbootstrap.com/) | Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap |
+| [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://www.docker.com/products/docker-desktop/) | Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. | 
+| [![Ruby](https://img.shields.io/badge/Ruby-green)](https://www.ruby-lang.org/es/) | A dynamic, open source programming language focused on simplicity and productivity. Its elegant syntax feels natural to read and easy to write.
 
 ## 4. ⚡️ Instalation
 
 ![Local](https://img.shields.io/badge/Local-yellow)
 
-* For the local installation of the project by download, you can do it by the following link: Download
+* For the local installation of the project by download, you can do it by the following link: [![Download](https://img.shields.io/badge/Download-green)](https://github.com/GedersonG/DatAnnouncement/archive/refs/heads/main.zip) 
 
 * Go to your Downloads folder on your computer
 * Unzip the .zip file named DatAnnouncement-main
@@ -72,10 +81,10 @@ To run the application, it is required to have previously installed:
 
 * Ruby  3.1.4 (https://rubyinstaller.org/downloads/ --> For windows)
    
-* PostgreSQL >14 
+* PostgreSQL >=14 
 
 
-Para ejecutar el proyecto en una terminal:
+To run the project on a terminal:
 
 * gem install blunder -> Windows (Install package manager Blundle)
 
@@ -90,6 +99,18 @@ Para ejecutar el proyecto en una terminal:
 * Rails server (Run project)
 
 Ruta: config/database.yml --> Development and test must have the postgres credentials installed.
+
+![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red): You must make sure that the credentials match your credentials configured in your PosgreSQL in **database.yml**.
+
+```sh
+# the same name as the operating system user running Rails.
+  username: postgres
+
+  # The password associated with the postgres role (username).
+  password: password
+  # password: root
+```
+
 
 
 ## Run in Docker
@@ -150,7 +171,7 @@ Project developed in the subject Software Architecture of the [Systems Engineeri
   
 ## 8. 👩‍💻 Documentation
 
-[![Documentation](https://img.shields.io/badge/Documentaci%C3%B3n-blueviolet)]()
+[![Documentation](https://img.shields.io/badge/Documentaci%C3%B3n-blueviolet)](https://docs.google.com/document/d/1-ztj2LCm-sJa1J3FEBkTgmoJWWY3vL13iFOdEn__Mnw/edit?usp=sharing)
 
   
   
