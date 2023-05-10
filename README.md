@@ -33,7 +33,7 @@ As a DatAnnouncement user, you can add new products, edit your existing product 
 As an administrator in DatAnnouncement, you can add, edit or delete categories from the configuration section of the web application.
 
 <div align="center">
-   <img src="https://devloteq.com/wp-content/uploads/2020/07/tiendas-en-linea.png" width="800" height="350">
+   <img src="https://devloteq.com/wp-content/uploads/2020/07/tiendas-en-linea.png" width="450" height="340">
 </div>
 
 
@@ -44,7 +44,7 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
   
   
   <div align="center">
-   <img src="https://raw.githubusercontent.com/JhonnyGCH/img/main/arquitectura.png" width="450" height="340">
+   <img src="https://raw.githubusercontent.com/JhonnyGCH/img/main/arquitectura.png" width="800" height="340">
 </div>
   
 
@@ -57,13 +57,14 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 | [![CSS](https://img.shields.io/badge/CSS-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)                                     | Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media. |
 | [![Ruby on Rails](https://img.shields.io/badge/Ruby_On_Rails-red)](https://rubyonrails.org/) | Rails is a full-stack framework. It ships with all the tools needed to build amazing web apps on both the front and back end.  |
 | [![Bootstrap](https://img.shields.io/badge/Bootstrap-purple)](https://getbootstrap.com/) | Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap |
-| [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://www.docker.com/products/docker-desktop/) | Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. | [![Ruby](https://img.shields.io/badge/Ruby-green)](https://www.ruby-lang.org/es/) | A dynamic, open source programming language focused on simplicity and productivity. Its elegant syntax feels natural to read and easy to write.
+| [![Dockers](https://img.shields.io/badge/Dockers-blue)](https://www.docker.com/products/docker-desktop/) | Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production. | 
+| [![Ruby](https://img.shields.io/badge/Ruby-green)](https://www.ruby-lang.org/es/) | A dynamic, open source programming language focused on simplicity and productivity. Its elegant syntax feels natural to read and easy to write.
 
 ## 4. ⚡️ Instalation
 
 ![Local](https://img.shields.io/badge/Local-yellow)
 
-* For the local installation of the project by download, you can do it by the following link: Download(https://github.com/GedersonG/DatAnnouncement/archive/refs/heads/main.zip)
+* For the local installation of the project by download, you can do it by the following link: ![Download](https://github.com/GedersonG/DatAnnouncement/archive/refs/heads/main.zip)
 
 * Go to your Downloads folder on your computer
 * Unzip the .zip file named DatAnnouncement-main
