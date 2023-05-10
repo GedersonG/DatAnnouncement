@@ -64,7 +64,7 @@ As an administrator in DatAnnouncement, you can add, edit or delete categories f
 
 ![Local](https://img.shields.io/badge/Local-yellow)
 
-* For the local installation of the project by download, you can do it by the following link: ![Download](https://img.shields.io/badge/Download-green)(https://github.com/GedersonG/DatAnnouncement/archive/refs/heads/main.zip)
+* For the local installation of the project by download, you can do it by the following link: [![Download](https://img.shields.io/badge/Download-green)](https://github.com/GedersonG/DatAnnouncement/archive/refs/heads/main.zip) 
 
 * Go to your Downloads folder on your computer
 * Unzip the .zip file named DatAnnouncement-main
