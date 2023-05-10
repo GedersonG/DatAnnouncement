@@ -77,13 +77,15 @@ To run the application, it is required to have previously installed:
 
 Para ejecutar el proyecto en una terminal:
 
-* blundle install -> Windows (Install package manager Blundle)
+* gem install blunder -> Windows (Install package manager Blundle)
 
-* Bundle (Install the Gemfile gems)
+* bundle install (Install the Gemfile gems)
 
-* rails db:migrate (Create tables and relationships DB)
+* rake db:create (Create database in development and database in test)
 
-* rails db:fixtures:load (Load testing fixtures)
+* rake db:migrate (Create tables and relationships DB)
+
+* rake db:fixtures:load (Load testing fixtures)
 
 * Rails server (Run project)
 
