@@ -90,8 +90,6 @@ To run the project on a terminal:
 
 * bundle install (Install the Gemfile gems)
 
-Before starting the database configuration, you must ensure in the file ./config/database.yml that the assigned host is "db" and not "localhost", both in the development and test environments.
-
 * rake db:create (Create database in development and database in test)
 
 * rake db:migrate (Create tables and relationships DB)
@@ -111,11 +109,19 @@ Ruta: config/database.yml --> Development and test must have the postgres creden
   # The password associated with the postgres role (username).
   password: password
   # password: root
+
 ```
 
 
 
 ## Run in Docker
+
+![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red): Before starting the database configuration, you must ensure in the file ./config/database.yml that the assigned host is "db" and not "localhost", both in the development and test environments.
+
+```sh
+  host: db 
+  # host: localhost
+```
 ### Linux
 
 * Run dockers
