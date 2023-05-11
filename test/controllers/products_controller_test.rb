@@ -18,7 +18,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get product_path(products(:Product1))
 
     assert_response :success
-    assert_select '.title', 'Monitor Gaming'
+    assert_select '.title', "#{PRODUCT_ONE}"
     assert_select '.description', '20 Pulgadas'
     assert_select '.price', '40000$'
   end
@@ -93,7 +93,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select "#{PRODUCT_NAME}", 1
-    assert_select 'h2', 'Monitor Gaming'
+    assert_select 'h2', "#{PRODUCT_ONE}"
   end
 
   test 'search a product by query_txt' do
@@ -101,7 +101,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select "#{PRODUCT_NAME}", 2
-    assert_select 'h2', 'Monitor Gaming'
+    assert_select 'h2', "#{PRODUCT_ONE}"
   end
 
   test 'sort products by expensive option selected' do
@@ -117,7 +117,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :success
     assert_select "#{PRODUCT_NAME}", 2
-    assert_select '.product:first-child h2', 'Monitor Gaming'
+    assert_select '.product:first-child h2', "#{PRODUCT_ONE}"
   end
 
   test 'can delete products' do
@@ -129,5 +129,6 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_equal flash[:notice], 'Product was successfully removed.'
   end
 
-  PRODUCT_NAME = ".product"
+  PRODUCT_NAME = '.product'
+  PRODUCT_ONE = 'Monitor Gaming'
 end
