@@ -151,9 +151,11 @@ button {
      padding: 30px 30px;
      z-index: 999;
      margin-bottom: 20px;
-     position: absolute;
+     position: inherit;
      background: #03cafc;
 }
+
+
 
 .logo {
     padding-top: 14px;
