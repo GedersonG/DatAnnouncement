@@ -90,6 +90,8 @@ To run the project on a terminal:
 
 * bundle install (Install the Gemfile gems)
 
+Before starting the database configuration, you must ensure in the file ./config/database.yml that the assigned host is "db" and not "localhost", both in the development and test environments.
+
 * rake db:create (Create database in development and database in test)
 
 * rake db:migrate (Create tables and relationships DB)
