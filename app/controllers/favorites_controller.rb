@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 class FavoritesController < ApplicationController
-  def index; end
+  def index
+    # Empty function by default action
+  end
 
   def create
     product.favorite!

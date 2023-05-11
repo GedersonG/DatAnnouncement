@@ -137,17 +137,21 @@ button {
      color: #03cafc;}
 
 .navbar-expand-md .navbar-nav {
-     padding-right: 10px;}
+     padding-right: 10px;
+}
 
 .header {
      width: 100%;
      padding: 30px 30px;
-     background: transparent;
-     position: absolute;
      z-index: 999;
-     margin-bottom: 20px;}
+     margin-bottom: 20px;
+     position: absolute;
+     background: #03cafc;
+}
 
-.logo {padding-top: 14px;}
+.logo {
+    padding-top: 14px;
+}
 
 
 .blu {
@@ -186,9 +190,4 @@ button {
 
 .text-center{
      align-items: center;
-}
-
-.header {
-     position: inherit;
-     background: #03cafc;
 }

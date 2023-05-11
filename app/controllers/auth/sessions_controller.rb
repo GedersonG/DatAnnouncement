@@ -3,7 +3,9 @@
 module Auth
   class SessionsController < ApplicationController
     skip_before_action :protect_pages
-    def new; end
+    def new
+      # Empty function by default action
+    end
 
     def create
       @user = User.find_by('email = :login OR username = :login', { login: params[:login] })

@@ -11,7 +11,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path
 
     assert_response :success
-    assert_select '.product', 2
+    assert_select "#{PRODUCT_NAME}", 2
   end
 
   test 'render a detail product page' do
@@ -92,7 +92,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(min_price: 30_000, max_price: 70_000)
 
     assert_response :success
-    assert_select '.product', 1
+    assert_select "#{PRODUCT_NAME}", 1
     assert_select 'h2', 'Monitor Gaming'
   end
 
@@ -100,7 +100,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(query_txt: 'Monitor')
 
     assert_response :success
-    assert_select '.product', 2
+    assert_select "#{PRODUCT_NAME}", 2
     assert_select 'h2', 'Monitor Gaming'
   end
 
@@ -108,7 +108,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(order_by: 'expensive')
 
     assert_response :success
-    assert_select '.product', 2
+    assert_select "#{PRODUCT_NAME}", 2
     assert_select '.product:first-child h2', 'Silla Gaming'
   end
 
@@ -116,7 +116,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     get products_path(order_by: 'cheaper')
 
     assert_response :success
-    assert_select '.product', 2
+    assert_select "#{PRODUCT_NAME}", 2
     assert_select '.product:first-child h2', 'Monitor Gaming'
   end
 
@@ -128,4 +128,6 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to products_path
     assert_equal flash[:notice], 'Product was successfully removed.'
   end
+
+  PRODUCT_NAME = ".product"
 end
