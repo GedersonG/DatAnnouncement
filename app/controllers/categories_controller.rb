@@ -1,5 +1,6 @@
-class CategoriesController < ApplicationController
+# frozen_string_literal: true
 
+class CategoriesController < ApplicationController
   before_action :authorize!
 
   # GET /categories or /categories.json
@@ -45,13 +46,14 @@ class CategoriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def category
-      @category = Category.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def category_params
-      params.require(:category).permit(:name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def category
+    @category = Category.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def category_params
+    params.require(:category).permit(:name)
+  end
 end

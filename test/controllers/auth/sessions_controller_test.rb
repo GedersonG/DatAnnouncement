@@ -1,33 +1,37 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class Auth::SessionsControllerTest < ActionDispatch::IntegrationTest
-  def setup
-    @user = users(:user1)
-  end
+require 'test_helper'
 
-  test "should get new" do
-    get new_session_url
-    assert_response :success
-  end
+module Auth
+  class SessionsControllerTest < ActionDispatch::IntegrationTest
+    def setup
+      @user = users(:user1)
+    end
 
-  test "should login an user by email" do
-    post sessions_url, params: { login: 'email1@datage.com', password: 'secretaryship' }
+    test 'should get new' do
+      get new_session_url
+      assert_response :success
+    end
 
-    assert_redirected_to products_url
-  end
+    test 'should login an user by email' do
+      post sessions_url, params: { login: 'email1@datage.com', password: 'secretaryship' }
 
-  test "should login an user by username" do
-    post sessions_url, params: { login: 'anyone', password: 'secretaryship' }
+      assert_redirected_to products_url
+    end
 
-    assert_redirected_to products_url
-  end
+    test 'should login an user by username' do
+      post sessions_url, params: { login: 'anyone', password: 'secretaryship' }
 
-  test "should logout" do
-    login
+      assert_redirected_to products_url
+    end
 
-    delete session_url(@user.id)
+    test 'should logout' do
+      login
 
-    assert_redirected_to products_url
-    assert_equal flash[:notice], 'Log out successfully'
+      delete session_url(@user.id)
+
+      assert_redirected_to products_url
+      assert_equal flash[:notice], 'Log out successfully'
+    end
   end
 end

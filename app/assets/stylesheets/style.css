@@ -6,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i&display=swap');
 
 @import url(css/animate.min.css);
-@import url(css/normalize.css);
 @import url(css/font-awesome.min.css);
-@import url(css/swiper.min.css);
 
 * { box-sizing: border-box !important;}
 
@@ -62,7 +60,6 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
      letter-spacing: 0;
-     font-weight: normal;
      position: relative;
      padding: 0 0 10px 0;
      font-weight: normal;
@@ -146,17 +143,21 @@ button {
      color: #03cafc;}
 
 .navbar-expand-md .navbar-nav {
-     padding-right: 10px;}
+     padding-right: 10px;
+}
 
 .header {
      width: 100%;
      padding: 30px 30px;
-     background: transparent;
-     position: absolute;
      z-index: 999;
-     margin-bottom: 20px;}
+     margin-bottom: 20px;
+     position: absolute;
+     background: #03cafc;
+}
 
-.logo {padding-top: 14px;}
+.logo {
+    padding-top: 14px;
+}
 
 
 .blu {
@@ -189,13 +190,10 @@ button {
 .title{margin-bottom: 20px;}
 
 .card {
-     align-items: center;
-     width: 500px;
+    align-items: center;
+    width: 500px;
+}
 
 .text-center{
      align-items: center;
-}}
-
-.header {
-     position: inherit;
-     background: #03cafc;}
+}
