@@ -86,18 +86,30 @@ To run the application, it is required to have previously installed:
 
 To run the project on a terminal:
 
-* gem install blunder -> Windows (Install package manager Blundle)
-
-* bundle install (Install the Gemfile gems)
-
-* rake db:create (Create database in development and database in test)
-
-* rake db:migrate (Create tables and relationships DB)
-
-* rake db:fixtures:load (Load testing fixtures)
-
-* Rails server (Run project)
-
+*  Windows (Install package manager Blundle)
+```sh
+gem install blunder
+```
+* Install the Gemfile gems
+```sh
+bundle install
+```
+* Create database in development and database in test
+```sh
+rake db:create
+```
+* Create tables and relationships DB
+```sh
+rake db:migrate
+```
+* Load testing fixtures
+```sh
+rake db:fixtures:load
+```
+* Run project
+```sh
+Rails server
+```
 Ruta: config/database.yml --> Development and test must have the postgres credentials installed.
 
 ![IMPORTANT](https://img.shields.io/badge/IMPORTANT-red): You must make sure that the credentials match your credentials configured in your PosgreSQL in **database.yml**.
@@ -125,27 +137,35 @@ Ruta: config/database.yml --> Development and test must have the postgres creden
 ### Linux
 
 * Run dockers
-sudo docker-compose up -d --build
-
+```sh
+  sudo docker-compose up -d --build
+```
 * Check status (view ID docker)
-sudo docker container ps
-
+```sh
+  sudo docker container ps
+```
 * Exec rake for init DB
-sudo docker exec -it ID rake db:migrate                          
-sudo docker exec -it ID rake db:fixtures:load
+```sh
+  sudo docker exec -it ID rake db:migrate                          
+  sudo docker exec -it ID rake db:fixtures:load
+```
+
 
 ### Windows
 
 * Run dockers
-docker-compose up -d --build
-
+```sh
+  docker-compose up -d --build
+```
 * Check status (view ID docker)
-docker container ps
-
+```sh
+  docker container ps
+```
 * Exec rake for init DB
-docker exec -it <ID> rake db:migrate                          
-docker exec -it <ID> rake db:fixtures:load
-
+```sh
+  docker exec -it <ID> rake db:migrate                          
+  docker exec -it <ID> rake db:fixtures:load
+```
 
 ## 5. 📫 License
 
